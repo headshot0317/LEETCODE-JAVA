@@ -1,6 +1,6 @@
 class Solution {
     public int deleteAndEarn(int[] nums) {
-       int freq[]=new int[100002];
+       int freq[]=new int[10002];
         Arrays.sort(nums);int c=1;
         for(int i=0;i<nums.length-1;i++){
             if(nums[i]==nums[i+1]){
@@ -11,7 +11,7 @@ class Solution {
             }
         }
         freq[nums[nums.length-1]]=c;
-        int dp[]=new int[100001];
+        int dp[]=new int[10001];
         dp[0]=freq[1];
         dp[1]=Math.max(dp[0],freq[2]*2);
         for(int i=2;i<dp.length;i++){
