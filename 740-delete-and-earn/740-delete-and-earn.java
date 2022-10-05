@@ -1,6 +1,6 @@
 class Solution {
     public int deleteAndEarn(int[] nums) {
-       int freq[]=new int[200000];
+       int freq[]=new int[100002];
         Arrays.sort(nums);int c=1;
         for(int i=0;i<nums.length-1;i++){
             if(nums[i]==nums[i+1]){
