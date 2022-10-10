@@ -9,7 +9,7 @@ class Solution {
             if(map.containsKey(find)){
                 count+=map.get(find);
             }
-                map.put(sum,map.getOrDefault(sum,0)+1); 
+            map.put(sum,map.getOrDefault(sum,0)+1); 
             
         }
         return count;
