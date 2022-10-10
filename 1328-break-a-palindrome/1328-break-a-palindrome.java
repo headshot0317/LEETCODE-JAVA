@@ -36,8 +36,7 @@ class Solution {
         for(int i=0;i<s.length;i++){
             ans1+=s[i];
         }
-        String ans3="a";
-        
+        String ans3="a";  
         if(ans1.length()==3&&str.charAt(0)=='a'){
             ans3+=str.charAt(1);
             ans3+='b';
