@@ -1,6 +1,6 @@
 class Solution {
     public int maxScoreSightseeingPair(int[] a) {
-       int a1[]=new int[a.length];
+        int a1[]=new int[a.length];
         int a2[]=new int[a.length];
         int max=Integer.MIN_VALUE;
         for(int i=0;i<a.length;i++){
