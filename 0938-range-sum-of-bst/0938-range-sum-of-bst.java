@@ -23,11 +23,12 @@ class Solution {
     void help(TreeNode root, int low, int high){
         if(root==null){
             return;
-            }
-        if(root.val>=low&&root.val<=high){
+        }
+        
+        help(root.left,low,high); 
+        help(root.right,low,high);
+         if(root.val>=low&&root.val<=high){
             sum+=root.val;
         }
-        help(root.left,low,high);
-        help(root.right,low,high);
     }
 }
