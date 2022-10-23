@@ -11,7 +11,6 @@ class Solution {
        sum-=a[0];
         sum+=nums[nums.length-1];
         a[1]=((nums.length*(nums.length+1))/2)-sum;
-        System.out.println(sum);
         return a;
     }
 }
